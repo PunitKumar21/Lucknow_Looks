@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucknow Looks Unisex Salon | Hair and Beauty Salon in Telibagh, Lucknow</title>
+<meta name="description" content="Lucknow Looks Unisex Salon in South City, Telibagh, Lucknow. Haircuts, hair spa, colour, facials, waxing, manicure, pedicure and party makeup for men and women. Open daily 10 AM to 11 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FAF6F0;--walnut:#4A2C20;--gold:#C9A24D;--gold-d:#9c7a2c;--sand:#f1e8da;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--cream);color:var(--walnut);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold-d);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;background:var(--gold);color:var(--walnut);padding:13px 28px;border-radius:999px;font:600 .95rem Poppins,sans-serif;text-decoration:none;border:2px solid var(--gold);cursor:pointer;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-3px);background:var(--walnut);border-color:var(--walnut);color:var(--cream)}
+.btn.ghost{background:transparent;border-color:var(--walnut)}
+.btn.ghost:hover{background:var(--walnut);color:var(--cream)}
+
+/* navbar */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.2rem 'Playfair Display',serif;text-decoration:none}
+.logo span{color:var(--gold-d)}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500}
+nav a:not(.btn):hover{color:var(--gold-d)}
+nav .btn{padding:9px 20px}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--walnut);margin:6px 9px;transition:.3s}
+@media(max-width:820px){
+  .burger{display:block}
+  nav{position:absolute;top:68px;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--sand);display:none}
+  nav.open{display:flex}
+}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:110px 0 100px;text-align:center;background:linear-gradient(135deg,#fbf3e3,#FAF6F0 55%,#f3e4c4)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:drift 18s ease-in-out infinite alternate}
+.b1{width:420px;height:420px;background:#e6c878;top:-120px;left:-100px}
+.b2{width:360px;height:360px;background:#f4e6c6;bottom:-140px;right:-60px;animation-duration:22s}
+.b3{width:260px;height:260px;background:#d9b45e;top:30%;left:55%;opacity:.3;animation-duration:26s}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.15)}}
+.sparkle{position:absolute;bottom:-10px;width:6px;height:6px;background:var(--gold);border-radius:50%;opacity:0;animation:rise linear infinite}
+@keyframes rise{10%{opacity:.8}to{transform:translateY(-560px);opacity:0}}
+.hero .wrap{position:relative;z-index:2}
+.badge{display:inline-block;background:var(--white);border:1px solid var(--gold);padding:6px 16px;border-radius:999px;font-size:.85rem;font-weight:500;margin-bottom:22px}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);margin-bottom:16px}
+.hero p{max-width:52ch;margin:0 auto 32px;font-size:1.08rem}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* sections */
+section{padding:84px 0}
+.alt{background:var(--sand)}
+.head{text-align:center;margin-bottom:44px}
+.head h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+.head h2::after{content:"";display:block;width:64px;height:3px;background:var(--gold);margin:14px auto 0;border-radius:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:var(--white);border-radius:16px;padding:24px;border:1px solid #eadfcb;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(74,44,32,.12)}
+.ico{font-size:1.8rem;margin-bottom:8px}
+.card h3{font-size:1.1rem;margin-bottom:4px}
+.price{color:var(--gold-d);font-weight:600}
+.note{text-align:center;margin-top:28px;font-size:.9rem;opacity:.85}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{border-radius:18px;box-shadow:0 14px 34px rgba(74,44,32,.18)}
+.about p{margin-bottom:14px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;cursor:zoom-in;transition:transform .3s}
+.gal img:hover{transform:scale(1.03)}
+#lb{position:fixed;inset:0;background:rgba(40,22,16,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-height:90vh;border-radius:12px}
+
+/* reviews + contact */
+.reviews{text-align:center;max-width:640px;margin:0 auto}
+.reviews p{margin-bottom:22px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:820px){.contact{grid-template-columns:1fr}}
+.contact h3{margin-bottom:12px}
+.info p{margin-bottom:10px}
+.hours{margin:14px 0 22px}
+.hours div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #e3d6bf;font-size:.92rem}
+iframe{width:100%;height:260px;border:0;border-radius:14px}
+form{display:grid;gap:14px;background:var(--white);padding:26px;border-radius:16px;border:1px solid #eadfcb}
+label{font-size:.88rem;font-weight:500}
+input,textarea,summary{font:inherit}
+input[type=text],input[type=tel],textarea{width:100%;padding:12px;border:1px solid #d6c7ad;border-radius:10px;background:var(--cream);color:var(--walnut);margin-top:4px}
+details{border:1px solid #d6c7ad;border-radius:10px;background:var(--cream)}
+summary{padding:12px;cursor:pointer;list-style:none}
+summary::after{content:"▾";float:right}
+.opts{padding:4px 12px 12px;display:grid;gap:6px;max-height:210px;overflow:auto}
+.opts label{display:flex;gap:10px;align-items:center;font-weight:400;font-size:.92rem}
+#bill:empty{display:none}
+#bill{background:var(--cream);border:1px dashed var(--gold-d);border-radius:10px;padding:12px 14px;font-size:.92rem}
+#bill div{display:flex;justify-content:space-between;padding:3px 0}
+#bill .tot{border-top:1px solid #d6c7ad;margin-top:6px;padding-top:8px;font-weight:600}
+input[type=date]{width:100%;padding:12px;border:1px solid #d6c7ad;border-radius:10px;background:var(--cream);color:var(--walnut);margin-top:4px;font:inherit}
+.slots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.slot{position:relative}
+.slot input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.slot span{display:block;border:1px solid #d6c7ad;border-radius:10px;padding:10px 12px;background:var(--cream);font-size:.85rem;line-height:1.35}
+.slot b{display:block;font-size:.92rem}
+.slot input:checked+span{border-color:var(--gold-d);background:#f6ead0;box-shadow:0 0 0 2px var(--gold)}
+.slot input:focus-visible+span{outline:3px solid var(--gold-d);outline-offset:2px}
+.slot.full span{opacity:.5;text-decoration:line-through}
+.slot.full input{cursor:not-allowed}
+.hint{font-size:.82rem;margin-top:6px;opacity:.85}
+#msg{min-height:1.6em;font-weight:500;color:#2d6a3e}
+#msg.err{color:#a02828}
+
+footer{background:var(--walnut);color:#eadfcb;padding:52px 0 24px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
+footer h3{color:var(--gold);font-size:1.1rem;margin-bottom:10px}
+footer a{text-decoration:none;display:block;margin-bottom:6px}
+footer a:hover{color:var(--gold)}
+.soc{display:flex;gap:10px}
+.soc a{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-weight:600;color:var(--gold);margin:0}
+.soc a:hover{background:var(--gold);color:var(--walnut)}
+.copy{text-align:center;margin-top:34px;font-size:.82rem;opacity:.75}
+
+.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.28);z-index:60;transition:transform .25s}
+.wa:hover{transform:scale(1.1)}
+.wa svg{width:32px;height:32px;fill:#fff}
+
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Lucknow <span>Looks</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav">
+      <a href="#services">Services</a><a href="#prices">Prices</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a class="btn" href="#contact">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div id="sparks"></div>
+  <div class="wrap">
+    <span class="badge">Open daily, 10 AM to 11 PM</span>
+    <h1>Look good. Feel great.</h1>
+    <p>Hair, skin and grooming for men and women, all under one roof in Telibagh, Lucknow.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/919888727379?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20Lucknow%20Looks." target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="btn ghost" href="tel:+919888727379">Call Now</a>
+    </div>
+  </div>
+</div>
+
+<section id="services"><div class="wrap">
+  <div class="head rv"><h2>Our Services</h2></div>
+  <div class="grid" id="svcGrid"></div>
+</div></section>
+
+<section id="prices" class="alt"><div class="wrap">
+  <div class="head rv"><h2>Services and Prices</h2></div>
+  <div class="grid" id="priceGrid"></div>
+  <p class="note rv">Prices may vary by hair length and service. Call to confirm.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <img class="rv" id="aboutImg" alt="Inside Lucknow Looks Unisex Salon" width="520" height="400">
+  <div class="rv">
+    <h2 style="font-size:2.2rem;margin-bottom:16px">A welcoming salon for everyone</h2>
+    <p>Lucknow Looks is a modern unisex salon in South City, Telibagh. Our experienced stylists take the time to understand what you want, whether it’s a sharp haircut, a relaxing hair spa or makeup for a special day.</p>
+    <p>Walk in any day between 10 AM and 11 PM, or book ahead so we have your slot ready.</p>
+    <a class="btn" href="#contact">Book your visit</a>
+  </div>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+  <div class="head rv"><h2>Gallery</h2></div>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap reviews rv">
+  <div class="head"><h2>Reviews</h2></div>
+  <p>See what our customers say about us on Google, and tell us about your own visit.</p>
+  <a class="btn" href="https://maps.app.goo.gl/TaLNiEpb2T9g6BTx8" target="_blank" rel="noopener">Read and leave a Google review</a>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+  <div class="head rv"><h2>Contact and Booking</h2></div>
+  <div class="contact">
+    <div class="info rv">
+      <h3>Visit us</h3>
+      <p>B2, South City, Raebareli Rd, below Union Bank of India, near South City Chauki, Telibagh, Lucknow, Uttar Pradesh 226025</p>
+      <p><a href="tel:+919888727379"><strong>09888727379</strong></a></p>
+      <div class="hours" id="hours"></div>
+      <iframe title="Map of Lucknow Looks Unisex Salon" loading="lazy" src="https://www.google.com/maps?q=B2%2C%20South%20City%2C%20Raebareli%20Rd%2C%20Telibagh%2C%20Lucknow%20226025&output=embed"></iframe>
+      <p style="margin-top:10px"><a href="https://maps.app.goo.gl/TaLNiEpb2T9g6BTx8" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+    <form class="rv" id="form">
+      <h3>Send an enquiry</h3>
+      <div><label for="fn">Name</label><input id="fn" type="text" autocomplete="name" required></div>
+      <div><label for="fp">Phone</label><input id="fp" type="tel" autocomplete="tel" pattern="[0-9+ ]{10,14}" title="Enter a valid phone number" required></div>
+      <details><summary id="sum">Select services</summary><div class="opts" id="opts"></div></details>
+      <div id="bill" aria-live="polite"></div>
+      <div><label for="fd">Preferred date</label><input id="fd" type="date" required></div>
+      <div id="slotWrap" hidden><label>Preferred time</label><div class="slots" id="slots"></div><p class="hint" id="slotHint"></p></div>
+      <div><label for="fm">Message (optional)</label><textarea id="fm" rows="3" placeholder="Preferred date and time, or any question"></textarea></div>
+      <button class="btn" type="submit">Send enquiry</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><h3>Lucknow Looks Unisex Salon</h3><p>B2, South City, Raebareli Rd, below Union Bank of India, near South City Chauki, Telibagh, Lucknow 226025</p><p><a href="tel:+919888727379">09888727379</a></p></div>
+    <div><h3>Quick links</h3><a href="#services">Services</a><a href="#prices">Prices</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h3>Follow us</h3><div class="soc">
+      <a href="https://instagram.com/lucknowlooks" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://facebook.com/lucknowlooks" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      <a href="https://wa.me/919888727379" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+    </div></div>
+  </div>
+  <p class="copy">© 2026 Lucknow Looks Unisex Salon. All rights reserved.</p>
+</div></footer>
+
+<a class="wa" href="https://wa.me/919888727379?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20Lucknow%20Looks." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.3-.5.9-1.700a.6.6 0 0 0 0-.6c-.1-.2-.7-1.700-1-2.300s-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2 .8 2.800.9 3.800.7a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+<div id="lb" role="dialog" aria-label="Enlarged photo"><img alt=""></div>
+
+<script>
+// Google Sheets web app that stores enquiries.
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbwjyjyfZ1Am3xlEmDDi81OWjqsZ18XYenBk4JyCxKH-Xo1lb0hVwioR8kSF3ALZtukyYQ/exec";
+
+// Edit services and prices here. [icon, name, price]
+const SERVICES = [
+  ["💇‍♂️","Haircut (Men)",150],["💇‍♀️","Haircut (Women)",300],["🧔","Beard Trim and Styling",150],
+  ["✨","Threading (Eyebrow/Upper lip)",150],["🌿","Hair Spa",500],["🎨","Hair Colour",600],
+  ["🧖","Cleanup",350],["💆","Facial",500],["🌞","D-Tan Treatment",450],
+  ["🪶","Waxing (Half arms/legs)",300],["💅","Manicure",400],["🦶","Pedicure",500],["💄","Makeup (Party)",700]
+];
+const $ = id => document.getElementById(id);
+$("svcGrid").innerHTML = SERVICES.map(s => `<div class="card rv"><div class="ico">${s[0]}</div><h3>${s[1]}</h3></div>`).join("");
+$("priceGrid").innerHTML = SERVICES.map(s => `<div class="card rv"><h3>${s[1]}</h3><p class="price">Rs ${s[2]}</p></div>`).join("");
+$("opts").innerHTML = SERVICES.map(s => `<label><input type="checkbox" value="${s[1]}" data-price="${s[2]}"> ${s[1]} (Rs ${s[2]})</label>`).join("");
+$("hours").innerHTML = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"].map(d => `<div><span>${d}</span><span>10 AM to 11 PM</span></div>`).join("");
+
+// Gallery photos live in the images folder. To add one, add a line: ["images/file.jpg", "description"].
+const PHOTOS = [
+  ["images/storefront.jpg", "Lucknow Looks salon entrance in South City, Telibagh"],
+  ["images/logo-wall.jpg", "Reception wall with the Lucknow Looks logo"],
+  ["images/reception.jpg", "Reception and waiting area"],
+  ["images/styling-chair.jpg", "Styling chairs and mirrors"]
+];
+$("gal").innerHTML = PHOTOS.map(p => `<img src="${p[0]}" alt="${p[1]}" loading="lazy">`).join("");
+$("aboutImg").src = PHOTOS[1][0];
+
+// lightbox
+$("gal").addEventListener("click", e => { if (e.target.tagName === "IMG") { $("lb").firstElementChild.src = e.target.src; $("lb").classList.add("on"); } });
+$("lb").addEventListener("click", () => $("lb").classList.remove("on"));
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("lb").classList.remove("on"); });
+
+// mobile menu
+$("burger").addEventListener("click", () => { const o = $("nav").classList.toggle("open"); $("burger").setAttribute("aria-expanded", o); });
+$("nav").addEventListener("click", e => { if (e.target.tagName === "A") { $("nav").classList.remove("open"); $("burger").setAttribute("aria-expanded", false); } });
+
+// sparkles
+for (let i = 0; i < 18; i++) {
+  const s = document.createElement("i"); s.className = "sparkle";
+  s.style.left = Math.random() * 100 + "%";
+  s.style.animationDuration = 9 + Math.random() * 10 + "s";
+  s.style.animationDelay = Math.random() * 10 + "s";
+  s.style.transform = "scale(" + (0.6 + Math.random()) + ")";
+  $("sparks").appendChild(s);
+}
+
+// scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+// selected services, live price list and total
+const picked = () => [...$("opts").querySelectorAll("input:checked")].map(c => ({ name: c.value, price: +c.dataset.price }));
+$("opts").addEventListener("change", () => {
+  const p = picked(), total = p.reduce((t, x) => t + x.price, 0);
+  $("sum").textContent = p.length ? p.length + " service" + (p.length > 1 ? "s" : "") + " selected" : "Select services";
+  $("bill").innerHTML = p.length
+    ? p.map(x => `<div><span>${x.name}</span><span>Rs ${x.price}</span></div>`).join("") + `<div class="tot"><span>Total</span><span>Rs ${total}</span></div>`
+    : "";
+});
+
+// time slots. Capacity per slot is set in the Apps Script (CAPACITY).
+const SLOTS = [["Opening","10 AM to 12 PM"],["Mid-day","12 PM to 2 PM"],["After lunch","2 PM to 5 PM"],["Evening","5 PM to 11 PM"]];
+const today = new Date().toLocaleDateString("en-CA");
+const maxD = new Date(Date.now() + 30 * 864e5).toLocaleDateString("en-CA");
+$("fd").min = today; $("fd").max = maxD;
+
+function drawSlots(counts, cap) {
+  $("slotWrap").hidden = false;
+  $("slots").innerHTML = SLOTS.map(([k, t]) => {
+    const left = counts ? cap - (counts[k] || 0) : null;
+    const full = left !== null && left <= 0;
+    const note = left === null ? "" : full ? "Full" : left + " left";
+    return `<label class="slot${full ? " full" : ""}"><input type="radio" name="slot" value="${k}" ${full ? "disabled" : ""}><span><b>${k}</b>${t}${note ? "<br>" + note : ""}</span></label>`;
+  }).join("");
+  $("slotHint").textContent = counts ? "Spots are limited to keep the salon comfortable." : "Could not check availability. We will confirm your time by phone.";
+}
+async function loadSlots() {
+  if (!$("fd").value) { $("slotWrap").hidden = true; return; }
+  $("slotHint").textContent = "Checking availability…"; $("slotWrap").hidden = false;
+  try {
+    const r = await (await fetch(SHEET_URL + "?date=" + $("fd").value)).json();
+    drawSlots(r.counts, r.capacity);
+  } catch (err) { drawSlots(null); }
+}
+$("fd").addEventListener("change", loadSlots);
+
+// enquiry form -> Google Sheet
+$("form").addEventListener("submit", async e => {
+  e.preventDefault();
+  const msg = $("msg"), btn = e.target.querySelector("button");
+  const p = picked(), total = p.reduce((t, x) => t + x.price, 0);
+  const service = p.map(x => x.name).join("\n");  // names only, one per line; prices stay out of the sheet
+  const slotEl = document.querySelector('input[name="slot"]:checked');
+  if (!service) { msg.className = "err"; msg.textContent = "Please select at least one service."; return; }
+  if (!slotEl) { msg.className = "err"; msg.textContent = "Please choose a date and a time slot."; return; }
+  msg.className = ""; msg.textContent = "Sending…"; btn.disabled = true;
+  const data = { name: $("fn").value.trim(), phone: $("fp").value.trim(), service, total, date: $("fd").value, slot: slotEl.value, message: $("fm").value.trim() };
+  const reset = () => { e.target.reset(); $("sum").textContent = "Select services"; $("bill").innerHTML = ""; $("slotWrap").hidden = true; };
+  const unsure = "Your request was sent, but we could not confirm the time slot. We will call you to confirm.";
+  try {
+    const res = await fetch(SHEET_URL, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify(data) });
+    let r = null;
+    try { r = JSON.parse(await res.text()); } catch (x) {}
+    if (r && r.ok) {
+      msg.textContent = "Thank you, " + data.name + "! Your request is booked for " + data.date + ", " + data.slot + ". Estimated total: Rs " + total + ". We will call you to confirm.";
+      reset();
+    } else if (r && r.error === "full") {
+      msg.className = "err"; msg.textContent = "Sorry, that time slot just became full. Please pick another slot."; loadSlots();
+    } else { msg.textContent = unsure; reset(); }
+  } catch (err) {
+    // Request usually reached the sheet even when the browser cannot read the reply.
+    if (navigator.onLine) { msg.textContent = unsure; reset(); }
+    else { msg.className = "err"; msg.textContent = "No internet. Please try again or call 09888727379."; }
+  }
+  btn.disabled = false;
+});
+</script>
+</body>
+</html>
